@@ -26,8 +26,8 @@ class EnsembleModel:
         return (proba[:, 1] > 0.5).astype(int)
 
 # File paths
-MODEL_PATH = r'saved_models\ensemble_model.pkl'
-PIPELINE_PATH = r'saved_models\pipeline.pkl'
+MODEL_PATH = r'saved_models/ensemble_model.pkl'
+PIPELINE_PATH = r'saved_models/pipeline.pkl'
 
 # Load the ensemble model and preprocessing pipeline
 if not os.path.exists(MODEL_PATH) or not os.path.exists(PIPELINE_PATH):
